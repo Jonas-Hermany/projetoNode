@@ -1,0 +1,13 @@
+<% include ../header %>
+    <header>
+        <h2>Produtos</h2>
+    </header>
+    <section>
+        <form action="/produto" method="post">
+            <input type="text" name="produto[nome]" placeholder="Nome">
+            <input type="text" name="produto[tipo]" placeholder="Tipo">
+            <input type="number" name="produto[valor]" placeholder="Valor">
+            <button type="submit">Cadastrar</button>
+        </form>
+    </section>
+    <% include ../footer %>

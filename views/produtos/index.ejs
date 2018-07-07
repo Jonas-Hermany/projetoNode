@@ -1,0 +1,39 @@
+<% include ../header %>
+    <header>
+        <h2>Produtos</h2>
+    </header>
+    <a href="/produtos/add">Cadastrar Produto</a>
+    <br>
+    <br>
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Tipo</th>
+                    <th>Valor</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% produtos.forEach(function(produto, index) { %>
+                    <tr>
+                        <td>
+                            <%- produto.nome %>
+                        </td>
+                        <td>
+                            <%- produto.tipo %>
+                        </td>
+                        <td>
+                            <%- produto.valor %>
+                        </td>
+                        <td>
+                            <a href="/produto/<%- produto._id %>/edit">Editar</a>
+                            <a href="/produto/<%- produto._id %>">Detalhes</a>
+                        </td>
+                    </tr>
+                    <% }) %>
+            </tbody>
+        </table>
+    </section>
+    <% include ../footer %>

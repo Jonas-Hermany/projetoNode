@@ -1,0 +1,16 @@
+<% include ../header %>
+    <header>
+        <h2>Editar Produto</h2>
+    </header>
+    <section>
+        <form action="/produto/<%- produto._id %>?_method=PUT" method="post">
+            <label>Nome:</label>
+            <input type="text" name="produto[nome]" value="<%- produto.nome %>">
+            <label>Tipo:</label>
+            <input type="text" name="produto[tipo]" value="<%- produto.tipo %>">
+            <label>Valor:</label>
+            <input type="number" name="produto[valor]" value="<%- produto.valor %>">
+            <button type="submit">Salvar</button>
+        </form>
+    </section>
+    <% include ../footer %>

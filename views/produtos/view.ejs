@@ -1,0 +1,24 @@
+<% include ../header %>
+    <header>
+        <h2>Visualização do Produto</h2>
+    </header>
+    <section>
+        <form action="/produto/<%- produto._id %>?_method=DELETE" method="post">
+            <p>
+                <label>Nome:</label>
+                <%- produto.nome %>
+            </p>
+            <p>
+                <label>Tipo:</label>
+                <%- produto.tipo %>
+            </p>
+            <p>
+                <label>Valor:</label>
+                <%- produto.valor %>
+            </p>
+            <p>
+                <button type="submit">Excluir</button>
+            </p>
+        </form>
+    </section>
+    <% include ../footer %>
