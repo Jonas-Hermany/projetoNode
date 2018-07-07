@@ -1,6 +1,9 @@
 # projetoNode
 Trabalho Final da disciplina de Desenvolvimento Web com JavaScript
 
+# Projeto no Heroku
+https://gerenciamentoprodutos.herokuapp.com/
+
 ## Instruções
 
 ```
